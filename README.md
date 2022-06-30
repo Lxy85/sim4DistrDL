@@ -32,11 +32,33 @@
 
        sudo apt-get install python-rsvg ipython
    
-4. Getting start
+4. Getting started
+
+Federated learning (FL) is emerging as a new paradigm to train machine learning (ML) models in a distributed environment. We present an application case of the decentralized federated learning on sim4DistrDL, i.e., consensus-based FA (CFA). CFA is a fully distributed (or serverless) federated learning approach. it leverages the cooperation of devices that perform learning inside the network by iterating local training and then mutual interactions via consensus-based aggregation. 
+
 
 Step 1: Construct a topology
       
         Use the Create() function in the NodeContainer class to create the required nodes
+	
+	NodeContainer nodes; 
+	
+        nodes.Create (6);  
+	
+        NodeContainer n0=NodeContainer(nodes.Get(0),nodes.Get(1));
+	
+                          ……
+					 
+	NetDeviceContainer devices; 
+	
+        NetDeviceContainer d0 = pointToPoint.Install (n0);
+	
+                          ……         
+			     
+        Ipv4InterfaceContainer interfaces = address.Assign (d0); 
+	
+                          ……
+
 
 Step 2: Implement and deploy cache (LRU-based Caching) for nodes and initialize the cache size for each node
 
