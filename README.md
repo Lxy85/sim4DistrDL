@@ -34,27 +34,27 @@
    
 4. Getting started
 
-  Federated learning (FL) is emerging as a new paradigm to train machine learning (ML) models in a distributed environment. We present an application case of the decentralized federated learning on sim4DistrDL. CFA is a fully distributed (or serverless) federated learning approach. it leverages the cooperation of devices that perform learning inside the network by iterating local training and then mutual interactions via consensus-based aggregation. 
+   Federated learning (FL) is emerging as a new paradigm to train machine learning (ML) models in a distributed environment. We present an application case of the decentralized federated learning on sim4DistrDL. CFA is a fully distributed (or serverless) federated learning approach. it leverages the cooperation of devices that perform learning inside the network by iterating local training and then mutual interactions via consensus-based aggregation. 
 
 Step 1: Construct a topology
       
-        Use the Create() function in the NodeContainer class to create the required nodes
+       Use the Create() function in the NodeContainer class to create the required nodes
 	
-	NodeContainer nodes; 
+       NodeContainer nodes; 
 	
-        nodes.Create (6);  
+       nodes.Create (6);  
 	
-        NodeContainer n0=NodeContainer(nodes.Get(0),nodes.Get(1));
+       NodeContainer n0=NodeContainer(nodes.Get(0),nodes.Get(1));
 	
                           ……
 					 
-	NetDeviceContainer devices; 
+      NetDeviceContainer devices; 
 	
-        NetDeviceContainer d0 = pointToPoint.Install (n0);
+      NetDeviceContainer d0 = pointToPoint.Install (n0);
 	
                           ……         
 			     
-        Ipv4InterfaceContainer interfaces = address.Assign (d0); 
+      Ipv4InterfaceContainer interfaces = address.Assign (d0); 
 	
                           ……
 
