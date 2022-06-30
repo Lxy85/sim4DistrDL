@@ -91,7 +91,7 @@ Step 2: Implement and deploy cache (LRU-based Caching) for nodes and initialize 
      
            ./waf build
      
-          The configure file contains the shared libraries and header files used for compiling files, and the path that must be entered when compiling scripts with a             waf tool.
+    The configure file contains the shared libraries and header files used for compiling files, and the path that must be entered when compiling scripts with a             waf tool.
 
 Step 3: Edge servers collect data from end devices 
 
@@ -101,9 +101,9 @@ Step 3: Edge servers collect data from end devices
                                  
 Step 4: Including deep learning lib 
 
-     Include all the header files that support deep learning into a header file. 
+  Include all the header files that support deep learning into a header file. 
    
-     In wscript file, configure cross compiling of network simulation module and deep learning module in the simulator.
+  In wscript file, configure cross compiling of network simulation module and deep learning module in the simulator.
         
         def build(bld):
         
@@ -121,7 +121,7 @@ Step 4: Including deep learning lib
             
 Step 5: Implement and Deploy of MLP model at edge servers as an application
 
-     Firstly, we should include the header file (deep.h ) of the deep learning module in the simulation. we should encapsulate the model into an application of NS3         to facilitate neural network training
+  Firstly, we should include the header file (deep.h ) of the deep learning module in the simulation. we should encapsulate the model into an application of NS3         to facilitate neural network training
         
                           ……
                           
