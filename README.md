@@ -40,32 +40,32 @@ Step 1: Construct a topology
       
   Use the Create() function in the NodeContainer class to create the required nodes
 	
-  NodeContainer nodes; 
+       NodeContainer nodes; 
 	
-  nodes.Create (6);  
+       nodes.Create (6);  
 	
-  NodeContainer n0=NodeContainer(nodes.Get(0),nodes.Get(1));
+       NodeContainer n0=NodeContainer(nodes.Get(0),nodes.Get(1));
 	
             ……
 					 
-  NetDeviceContainer devices; 
+       NetDeviceContainer devices; 
 	
-  NetDeviceContainer d0 = pointToPoint.Install (n0);
+       NetDeviceContainer d0 = pointToPoint.Install (n0);
 	
             ……         
 			     
-  Ipv4InterfaceContainer interfaces = address.Assign (d0); 
+      Ipv4InterfaceContainer interfaces = address.Assign (d0); 
 	
             ……
 
 
 Step 2: Implement and deploy cache (LRU-based Caching) for nodes and initialize the cache size for each node
 
-        1) Configuration : 
+     1) Configuration : 
      
            Configure wscript file, add “./utils/create-module.py src/Lru”, to construct a Lru module;
        
-        2) Implement Lru module
+     2) Implement Lru module
      
            Cache data: LRUCache::set(int key, string value)  
         
@@ -85,7 +85,7 @@ Step 2: Implement and deploy cache (LRU-based Caching) for nodes and initialize 
      
            b. the data is placed at the head of the linked list.
        
-       3)  Compile LRU-based Caching component to make the simulator include Lru module
+     3)  Compile LRU-based Caching component to make the simulator include Lru module
     
            ./waf configure
      
@@ -101,9 +101,9 @@ Step 3: Edge servers collect data from end devices
                                  
 Step 4: Including deep learning lib 
 
-        Include all the header files that support deep learning into a header file. 
+     Include all the header files that support deep learning into a header file. 
    
-        In wscript file, configure cross compiling of network simulation module and deep learning module in the simulator.
+     In wscript file, configure cross compiling of network simulation module and deep learning module in the simulator.
         
         def build(bld):
         
@@ -121,7 +121,7 @@ Step 4: Including deep learning lib
             
 Step 5: Implement and Deploy of MLP model at edge servers as an application
 
-        Firstly, we should include the header file (deep.h ) of the deep learning module in the simulation. we should encapsulate the model into an application of NS3         to facilitate neural network training
+     Firstly, we should include the header file (deep.h ) of the deep learning module in the simulation. we should encapsulate the model into an application of NS3         to facilitate neural network training
         
                           ……
                           
