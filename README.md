@@ -34,8 +34,7 @@
    
 4. Getting started
 
-Federated learning (FL) is emerging as a new paradigm to train machine learning (ML) models in a distributed environment. We present an application case of the decentralized federated learning on sim4DistrDL, i.e., consensus-based FA (CFA). CFA is a fully distributed (or serverless) federated learning approach. it leverages the cooperation of devices that perform learning inside the network by iterating local training and then mutual interactions via consensus-based aggregation. 
-
+       Federated learning (FL) is emerging as a new paradigm to train machine learning (ML) models in a distributed environment. We present an application case of the decentralized federated learning on sim4DistrDL. CFA is a fully distributed (or serverless) federated learning approach. it leverages the cooperation of devices that perform learning inside the network by iterating local training and then mutual interactions via consensus-based aggregation. 
 
 Step 1: Construct a topology
       
