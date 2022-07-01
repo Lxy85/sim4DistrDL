@@ -2,7 +2,7 @@
 
 1. Description
 
-   Sim4DistrDL is a novel discrete event simulator, which includes a deep learning module and a network simulation module to facilitate simulation of DNN-based distributed applications. Sim4DistrDL incorporates OpenNN[1] and other deep learning libs into the extensively used discrete event simulator, NS-3. NS-3[2] is a process-based discrete-event simulation framework. The detailed information of NS3 can be found at https://www.nsnam.org/. Some popular DNN models, e.g. MLP, LeNet and VGG, have been implemented on Sim4DistrDL. 
+   Sim4DistrDL is a novel discrete event simulator, which includes a deep learning module and a network simulation module to facilitate simulation of DNN-based distributed applications. Sim4DistrDL incorporates OpenNN[1] and other deep learning libs into the extensively used discrete event simulator NS-3. NS-3[2] is a process-based discrete-event simulation framework. The detailed information of NS3 can be found at https://www.nsnam.org/. Some popular DNN models, e.g. MLP, LeNet and VGG, have been implemented on Sim4DistrDL. 
    
    To achieve a personalized environment to simulate distributed learning, users also can easily include new deep learning models or libs into Sim4DistrDL by following  the instruction below and those have been implemented on Sim4DistrDL. Meanwhile, we will extend sim4DistrDL to new application scenarios.
   
